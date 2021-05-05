@@ -1,0 +1,19 @@
+extends layout.pug
+block scripts
+    
+block content
+    .modal-dialog
+        .modal-content
+          .modal-header
+            h4#myModalLabel.modal-title
+              | Adress
+          .modal-body
+            form(role='form' method='GET' action='https://www.google.com/')
+              div.form-group
+                input#name.form-control(type='text', placeholder='Locations' name='name')
+              button.btn.btn-primary(type="submit", name="asdf") Submit
+            h4#result
+            h4#description
+    script(src='js/app.js')
+
+    
